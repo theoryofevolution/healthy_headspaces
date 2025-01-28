@@ -45,5 +45,5 @@ scaled_inputs = scaler.transform([inputs])
 # Predicting
 if st.button("Predict"):
     prediction = model.predict(scaled_inputs)
-    result = "Depression Detected" if prediction[0] == 1 else "No Depression Detected"
+    result = "High Risk of Depression" if prediction[0] == 1 else "Low Risk of Depression"
     st.subheader(result)

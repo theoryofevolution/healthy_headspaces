@@ -7,29 +7,18 @@ model = joblib.load("model.pkl")
 scaler = joblib.load("scaler.pkl")
 label_encoders = joblib.load("label_encoders.pkl")
 
-# Custom CSS for styling
-# Footer (Fixed at the bottom)
+# Display the logo at the top of the page
 st.markdown(
     """
-    <style>
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            color: #54207E;
-            background-color: #C1F0FC;
-        }
-    </style>
-    <div class='footer'>© 2025 People of Programming</div>
+    <div style="text-align: center;">
+        <img src="logo.jpg" width="150">
+    </div>
     """,
     unsafe_allow_html=True
 )
 
 # App Title
-st.title("💜 Healthy Headspaces - Depression Prediction Applet")
+st.title("Healthy Headspaces - Depression Prediction Applet")
 
 # Brief Report on Depression in Students
 st.header("Understanding Depression Among Students")
@@ -103,3 +92,23 @@ if st.button("Predict"):
         )
     else:
         st.subheader("✅ No Depression Detected")
+
+# Footer (Fixed at the bottom)
+st.markdown(
+    """
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #54207E;
+            background-color: #C1F0FC;
+        }
+    </style>
+    <div class='footer'>© 2025 People of Programming</div>
+    """,
+    unsafe_allow_html=True
+)

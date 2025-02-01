@@ -1,16 +1,6 @@
 import streamlit as st
 import numpy as np
 import joblib
-st.markdown(
-    """
-    <style>
-        h1, h2, h3, h4, h5, h6 {
-            text-align: center;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # Load the model, scaler, and encoders
 model = joblib.load("model.pkl")
@@ -31,6 +21,16 @@ st.markdown(
 st.markdown(
     """
     <h1 style="text-align: center;">Healthy Headspaces</h1>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
+    """
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+    </style>
     """,
     unsafe_allow_html=True
 )
@@ -84,7 +84,7 @@ scaled_inputs = scaler.transform([inputs])
 if st.button("Predict"):
     prediction = model.predict(scaled_inputs)
     if prediction[0] == 1:
-        st.subheader("🟣 Depression Detected")
+        st.subheader("🟣 At Risk Of Depression")
         st.markdown(
             """
             ### 💡 Resources for Mental Health Support
@@ -105,7 +105,7 @@ if st.button("Predict"):
             """
         )
     else:
-        st.subheader("✅ No Depression Detected")
+        st.subheader("✅ No Risk Of Depression")
 
 # Footer (Fixed at the bottom)
 st.markdown(

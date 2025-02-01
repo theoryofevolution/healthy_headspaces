@@ -112,9 +112,10 @@ st.markdown(
     """
     <style>
         .footer {
-            position: center;
             position: fixed;
             bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 100%;
             text-align: center;
             padding: 10px;
@@ -122,8 +123,14 @@ st.markdown(
             color: #54207E;
             background-color: #C1F0FC;
         }
+        /* Prevent footer from overlapping content */
+        .main {
+            margin-bottom: 50px; 
+        }
     </style>
-<div class='footer'>Made with ❤ by People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a></div>
+    <div class='footer'>
+        © 2025 People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a>
+    </div>
     """,
     unsafe_allow_html=True
 )

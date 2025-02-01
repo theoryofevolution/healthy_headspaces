@@ -18,8 +18,12 @@ st.markdown(
 )
 
 # App Title
-st.title("Healthy Headspaces")
-st.header("Drepression Prediction Applet")
+st.markdown(
+    """
+    <h1 style="text-align: center;">Healthy Headspaces - Depression Prediction Applet</h1>
+    """,
+    unsafe_allow_html=True
+)
 # Brief Report on Depression in Students
 st.header("Understanding Depression Among Students")
 st.markdown(

@@ -20,12 +20,12 @@ st.markdown(
 # App Title
 st.markdown(
     """
-    <h1 style="text-align: center;">Healthy Headspaces - Depression Prediction Applet</h1>
+    <h1 style="text-align: center;">Healthy Headspaces</h1>
     """,
     unsafe_allow_html=True
 )
 # Brief Report on Depression in Students
-st.header("Understanding Depression Among Students")
+st.header("Understanding Depression Among Students: A Depression Prediction Applet")
 st.markdown(
     """
     Depression is a significant concern among students, affecting their academic performance, social interactions, and overall well-being. Recent studies have highlighted the prevalence and impact of depression in educational settings:
@@ -112,7 +112,7 @@ st.markdown(
             background-color: #C1F0FC;
         }
     </style>
-<div class='footer'>Made with ❤ by People of Programming | © 2025 People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a></div>
+<div class='footer'>Made with ❤ by People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a></div>
     """,
     unsafe_allow_html=True
 )

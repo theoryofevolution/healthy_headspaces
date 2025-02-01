@@ -108,7 +108,7 @@ st.markdown(
             background-color: #C1F0FC;
         }
     </style>
-    <div class='footer'>© 2025 People of Programming</div>
+    <div class='footer'>© 2025 People of Programming | https://peopleofprogramming.com</div>
     """,
     unsafe_allow_html=True
 )

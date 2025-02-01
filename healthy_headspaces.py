@@ -108,7 +108,7 @@ st.markdown(
             background-color: #C1F0FC;
         }
     </style>
-    <div class='footer'>© 2025 People of Programming | https://peopleofprogramming.com</div>
+<div class='footer'>© 2025 People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a></div>
     """,
     unsafe_allow_html=True
 )

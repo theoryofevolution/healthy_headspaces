@@ -10,40 +10,6 @@ label_encoders = joblib.load("label_encoders.pkl")
 # Custom CSS for styling
 st.markdown(
     """
-    <style>
-        body {
-            background-color: #C1F0FC; /* Light Blue Background */
-            color: #54207E; /* Dark Purple Text */
-        }
-        .stApp {
-            background-color: #C1F0FC;
-        }
-        .stButton>button {
-            background-color: #A260D7; /* Light Purple Buttons */
-            color: white;
-            border-radius: 10px;
-            border: 2px solid #54207E;
-            font-size: 18px;
-        }
-        .stTextInput, .stSelectbox, .stNumberInput, .stSlider {
-            color: #54207E;
-            background-color: white;
-            border-radius: 5px;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: #54207E; /* Dark Purple Titles */
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            color: #54207E;
-            background-color: #C1F0FC;
-        }
-    </style>
     <div class='footer'>© 2025 People of Programming</div>
     """,
     unsafe_allow_html=True

@@ -8,8 +8,21 @@ scaler = joblib.load("scaler.pkl")
 label_encoders = joblib.load("label_encoders.pkl")
 
 # Custom CSS for styling
+# Footer (Fixed at the bottom)
 st.markdown(
     """
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #54207E;
+            background-color: #C1F0FC;
+        }
+    </style>
     <div class='footer'>© 2025 People of Programming</div>
     """,
     unsafe_allow_html=True
@@ -67,5 +80,26 @@ scaled_inputs = scaler.transform([inputs])
 # Predicting
 if st.button("Predict"):
     prediction = model.predict(scaled_inputs)
-    result = "🟣 Depression Detected" if prediction[0] == 1 else "✅ No Depression Detected"
-    st.subheader(result)
+    if prediction[0] == 1:
+        st.subheader("🟣 Depression Detected")
+        st.markdown(
+            """
+            ### 💡 Resources for Mental Health Support
+            - **📞 Helplines (USA)**:
+              - National Suicide Prevention Lifeline: [988](https://988lifeline.org)
+              - Crisis Text Line: Text **HELLO** to 741741
+              - The Trevor Project (LGBTQ+): [TheTrevorProject.org](https://www.thetrevorproject.org/)
+
+            - **🌍 International Resources**:
+              - Find your country’s helpline: [Check Here](https://www.findahelpline.com/)
+              
+            - **📖 Self-Help & Wellness**:
+              - Mental health exercises: [Mind.org](https://www.mind.org.uk/)
+              - Free guided meditation: [Headspace](https://www.headspace.com/)
+              - Student mental health tips: [Active Minds](https://www.activeminds.org/)
+            
+            If you're struggling, please reach out. You're not alone. 💜
+            """
+        )
+    else:
+        st.subheader("✅ No Depression Detected")

@@ -18,8 +18,8 @@ st.markdown(
 )
 
 # App Title
-st.title("Healthy Headspaces - Depression Prediction Applet")
-
+st.title("Healthy Headspaces")
+st.header("Drepression Prediction Applet")
 # Brief Report on Depression in Students
 st.header("Understanding Depression Among Students")
 st.markdown(
@@ -108,7 +108,7 @@ st.markdown(
             background-color: #C1F0FC;
         }
     </style>
-<div class='footer'>Made with ❤ by People of Programming |© 2025 People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a></div>
+<div class='footer'>Made with ❤ by People of Programming | © 2025 People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a></div>
     """,
     unsafe_allow_html=True
 )

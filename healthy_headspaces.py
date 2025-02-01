@@ -11,8 +11,29 @@ scaler = joblib.load("scaler.pkl")
 label_encoders = joblib.load("label_encoders.pkl")
 
 # App Title
-st.title("Depression Prediction App")
+st.title("💜 Healthy Headspaces - Depression Prediction Applet")
 
+# Your existing code remains unchanged...
+
+# Footer (Fixed at the bottom)
+st.markdown(
+    """
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #54207E;
+            background-color: #C1F0FC;
+        }
+    </style>
+    <div class='footer'>© 2025 People of Programming</div>
+    """,
+    unsafe_allow_html=True
+)
 # User Inputs
 gender = st.selectbox("Gender", ["Male", "Female"])
 age = st.number_input("Age", min_value=10, max_value=100, step=1)

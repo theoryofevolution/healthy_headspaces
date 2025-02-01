@@ -1,6 +1,16 @@
 import streamlit as st
 import numpy as np
 import joblib
+st.markdown(
+    """
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # Load the model, scaler, and encoders
 model = joblib.load("model.pkl")

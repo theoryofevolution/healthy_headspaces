@@ -129,7 +129,7 @@ st.markdown(
         }
     </style>
     <div class='footer'>
-        Made with ❤️ People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a>
+        Made with ❤️ by People of Programming | <a href="https://peopleofprogramming.com" target="_blank" style="color: #54207E; text-decoration: none;">Visit Our Website</a>
     </div>
     """,
     unsafe_allow_html=True

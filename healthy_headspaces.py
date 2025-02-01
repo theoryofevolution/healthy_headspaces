@@ -112,7 +112,7 @@ st.markdown(
     """
     <style>
         .footer {
-            position: fixed;
+            position: center;
             bottom: 0;
             width: 100%;
             text-align: center;

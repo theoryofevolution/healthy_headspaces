@@ -11,7 +11,7 @@ label_encoders = joblib.load("label_encoders.pkl")
 st.markdown(
     """
     <div style="text-align: center;">
-        <img src="logo.jpg" width="150">
+        <img src="https://cdn.discordapp.com/attachments/844331468544016414/1335158772611416154/475011204_630007929430432_914427947587490711_n.png?ex=679f2701&is=679dd581&hm=6ac679ea10f6e6158601bf1ec4a04e83be2be505fb0ecc32b9a6cec0ea094b85&" width="150">
     </div>
     """,
     unsafe_allow_html=True
